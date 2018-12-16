@@ -37,6 +37,9 @@
     <AssemblyOriginatorKeyFile>testKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ServerRegistrationManager, Version=2.7.1.0, Culture=neutral, PublicKeyToken=68bd4561cc3495fc, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServerRegistrationManager.2.7.1\lib\net45\ServerRegistrationManager.exe</HintPath>
+    </Reference>
     <Reference Include="SharpShell, Version=2.7.1.0, Culture=neutral, PublicKeyToken=f14dc899472fe6fb, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpShell.2.7.1\lib\net40-client\SharpShell.dll</HintPath>
     </Reference>
