@@ -7,8 +7,8 @@
     <ProjectGuid>{51657E82-E8F5-4302-B968-3B681D4DD27C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CountLinesExtension</RootNamespace>
-    <AssemblyName>CountLinesExtension</AssemblyName>
+    <RootNamespace>SignApk</RootNamespace>
+    <AssemblyName>SignApk</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -34,7 +34,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>testKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>hgkey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ServerRegistrationManager, Version=2.7.1.0, Culture=neutral, PublicKeyToken=68bd4561cc3495fc, processorArchitecture=MSIL">
@@ -55,12 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CountLinesExtension.cs" />
+    <Compile Include="SignApk.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="hgkey.pfx" />
     <None Include="packages.config" />
-    <None Include="testKey.pfx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
